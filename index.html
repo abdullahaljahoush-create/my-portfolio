@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Portfolio</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js" defer></script>
+</head>
+<body>
+
+<div class="lang-switch">
+<button onclick="setLang('ar')">العربية</button>
+<button onclick="setLang('en')">English</button>
+</div>
+
+<header>
+<h1 data-ar="عبدالله الجاهوش - مهندس مدني" data-en="Abdullah Aljahoush - Civil Engineer">
+عبدالله الجاهوش - مهندس مدني
+</h1>
+
+<button class="cv-btn" onclick="downloadCV()" 
+data-ar="تحميل السيرة الذاتية" 
+data-en="Download CV">تحميل السيرة الذاتية</button>
+</header>
+
+<section class="projects">
+<h2 data-ar="المشاريع" data-en="Projects">المشاريع</h2>
+
+<div class="card-container">
+<div class="card">
+<h3 data-ar="مشروع 1" data-en="Project 1">مشروع 1</h3>
+<a href="assets/CV.pdf" target="_blank" data-ar="فتح PDF" data-en="Open PDF">فتح PDF</a>
+</div>
+
+<div class="card">
+<h3 data-ar="مشروع 2" data-en="Project 2">مشروع 2</h3>
+<a href="assets/CV.pdf" target="_blank" data-ar="فتح PDF" data-en="Open PDF">فتح PDF</a>
+</div>
+
+</div>
+</section>
+
+</body>
+</html>
