@@ -1,44 +1,141 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<title>Portfolio</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>المهندس عبدالله الجاهوش — Portfolio</title>
 <link rel="stylesheet" href="css/style.css">
-<script src="js/script.js" defer></script>
 </head>
 <body>
 
-<div class="lang-switch">
-<button onclick="setLang('ar')">العربية</button>
-<button onclick="setLang('en')">English</button>
-</div>
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <img src="images/profile.jpg" alt="Profile" class="avatar">
+      <div class="brand-text">
+        <h1 data-ar="المهندس عبدالله الجاهوش" data-en="Eng. Abdullah Aljahoush">المهندس عبدالله الجاهوش</h1>
+        <p data-ar="مهندس مدني — تصميم وتنفيذ" data-en="Civil Engineer — Design & Execution">مهندس مدني — تصميم وتنفيذ</p>
+      </div>
+    </div>
 
-<header>
-<h1 data-ar="عبدالله الجاهوش - مهندس مدني" data-en="Abdullah Aljahoush - Civil Engineer">
-عبدالله الجاهوش - مهندس مدني
-</h1>
-
-<button class="cv-btn" onclick="downloadCV()" 
-data-ar="تحميل السيرة الذاتية" 
-data-en="Download CV">تحميل السيرة الذاتية</button>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+      <a href="#cv" data-ar="السيرة الذاتية" data-en="CV">السيرة الذاتية</a>
+      <a href="#projects" data-ar="المشاريع" data-en="Projects">المشاريع</a>
+      <a href="#experience" data-ar="الخبرات" data-en="Experience">الخبرات</a>
+      <button id="langToggle" class="lang-toggle" aria-label="Toggle language">English</button>
+    </nav>
+  </div>
 </header>
 
-<section class="projects">
-<h2 data-ar="المشاريع" data-en="Projects">المشاريع</h2>
+<main>
+  <section id="home" class="section hero">
+    <div class="container">
+      <h2 data-ar="مرحباً — أنا عبدالله" data-en="Hello — I'm Abdullah">مرحباً — أنا عبدالله</h2>
+      <p data-ar="مهندس مدني متخصص في التصميم الإنشائي والتنفيذ، لدي خبرة عملية في حساب الكميات وإعداد جداول الكلف." data-en="Civil engineer specialized in structural design and execution, experienced in quantity surveying and cost estimation.">مهندس مدني متخصص في التصميم الإنشائي والتنفيذ، لدي خبرة عملية في حساب الكميات وإعداد جداول الكلف.</p>
 
-<div class="card-container">
-<div class="card">
-<h3 data-ar="مشروع 1" data-en="Project 1">مشروع 1</h3>
-<a href="assets/CV.pdf" target="_blank" data-ar="فتح PDF" data-en="Open PDF">فتح PDF</a>
+      <div class="hero-ctas">
+        <a class="btn primary" id="downloadCvBtn" href="assets/CV.pdf" download data-ar="تحميل السيرة الذاتية" data-en="Download CV">تحميل السيرة الذاتية</a>
+        <a class="btn ghost" href="#projects" data-ar="مشاهدة المشاريع" data-en="View Projects">مشاهدة المشاريع</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="cv" class="section">
+    <div class="container cv-grid">
+      <div class="cv-left">
+        <h3 data-ar="السيرة الذاتية" data-en="Curriculum Vitae">السيرة الذاتية</h3>
+        <p><strong data-ar="الاسم" data-en="Name">الاسم</strong>: <span>عبدالله الجاهوش</span></p>
+        <p><strong data-ar="المواليد" data-en="DOB">المواليد</strong>: 1998 — دمشق</p>
+        <p><strong data-ar="الإقامة" data-en="Residence">الإقامة</strong>: ريف دمشق</p>
+        <p><strong data-ar="الهاتف" data-en="Phone">الهاتف</strong>: +963 934 975 122</p>
+        <p><strong data-ar="البريد" data-en="Email">البريد</strong>: abdullahaljahoush@gmail.com</p>
+        <a class="btn secondary" href="assets/CV.pdf" download data-ar="تحميل السيرة الذاتية" data-en="Download CV">تحميل السيرة الذاتية</a>
+      </div>
+      <div class="cv-right">
+        <h4 data-ar="الخبرات" data-en="Experience">الخبرات</h4>
+        <ul>
+          <li data-ar="خبرة في دراسة وتصميم الأبنية" data-en="Experience in structural study and design">خبرة في دراسة وتصميم الأبنية</li>
+          <li data-ar="خبرة في تنفيذ المنشأت الخرسانية" data-en="Experience in execution of reinforced concrete structures">خبرة في تنفيذ المنشأت الخرسانية</li>
+          <li data-ar="خبرة في حساب الكميات وإعداد جداول الكلف" data-en="Quantity surveying & cost schedules">خبرة في حساب الكميات وإعداد جداول الكلف</li>
+          <li data-ar="خبرة في المحاسبة" data-en="Experience in accounting">خبرة في المحاسبة</li>
+        </ul>
+
+        <h4 data-ar="المهارات" data-en="Skills">المهارات</h4>
+        <ul>
+          <li data-ar="ريفيت - اوتوكاد - ايتابس - سيف" data-en="Revit - AutoCAD - Etabs - Safe">ريفيت - اوتوكاد - ايتابس - سيف</li>
+          <li data-ar="مهارات حاسوبية وبرمجية" data-en="Computer & programming skills">مهارات حاسوبية وبرمجية</li>
+          <li data-ar="قيادة الفريق والتكيف" data-en="Team leadership & adaptability">قيادة الفريق والتكيف</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h3 data-ar="المشاريع" data-en="Projects">المشاريع</h3>
+      <div class="cards-grid">
+        <article class="card" tabindex="0" data-pdf="projects/with-basement.pdf">
+          <div class="card-inner">
+            <h4>مشروع: بناء مع قبو</h4>
+            <p>مذكرة حسابية ومخططات — تحليل وتصميم.</p>
+            <div class="card-actions">
+              <a class="btn small" href="projects/with-basement.pdf" target="_blank" data-en="Open PDF" data-ar="فتح PDF">فتح PDF</a>
+              <button class="btn small outline open-pdf" data-file="projects/with-basement.pdf" data-ar="فتح" data-en="Open">فتح</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" tabindex="0" data-pdf="projects/without-basement.pdf">
+          <div class="card-inner">
+            <h4>مشروع: بدون قبو</h4>
+            <p>مذكرة حسابية ومخططات البناء.</p>
+            <div class="card-actions">
+              <a class="btn small" href="projects/without-basement.pdf" target="_blank" data-en="Open PDF" data-ar="فتح PDF">فتح PDF</a>
+              <button class="btn small outline open-pdf" data-file="projects/without-basement.pdf" data-ar="فتح" data-en="Open">فتح</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="card" tabindex="0" data-pdf="projects/arch-1.pdf">
+          <div class="card-inner">
+            <h4>مشروع معماري</h4>
+            <p>رسومات معمارية ومخططات.</p>
+            <div class="card-actions">
+              <a class="btn small" href="projects/arch-1.pdf" target="_blank" data-en="Open PDF" data-ar="فتح PDF">فتح PDF</a>
+              <button class="btn small outline open-pdf" data-file="projects/arch-1.pdf" data-ar="فتح" data-en="Open">فتح</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="container">
+      <h3 data-ar="الخبرات العملية" data-en="Work Experience">الخبرات العملية</h3>
+      <div class="timeline">
+        <div class="time-item"><strong>2023 - الآن</strong><span data-ar="عمل في التصميم والتنفيذ" data-en="Design & execution work">عمل في التصميم والتنفيذ</span></div>
+        <div class="time-item"><strong>2021 - 2023</strong><span data-ar="أعمال حساب كميات" data-en="Quantity surveying work">أعمال حساب كميات</span></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Abdullah Aljahoush — جميع الحقوق محفوظة</p>
+    </div>
+  </footer>
+</main>
+
+<div id="pdfModal" class="modal" aria-hidden="true">
+  <div class="modal-content">
+    <button class="modal-close" aria-label="Close">×</button>
+    <iframe id="pdfView" src="" frameborder="0"></iframe>
+  </div>
 </div>
 
-<div class="card">
-<h3 data-ar="مشروع 2" data-en="Project 2">مشروع 2</h3>
-<a href="assets/CV.pdf" target="_blank" data-ar="فتح PDF" data-en="Open PDF">فتح PDF</a>
-</div>
-
-</div>
-</section>
-
+<script src="js/script.js"></script>
 </body>
 </html>
